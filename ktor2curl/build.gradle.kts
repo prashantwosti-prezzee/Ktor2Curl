@@ -57,7 +57,7 @@ android {
     namespace = "io.github.kabirnayeem99.ktor2curl"
     compileSdk = 35
     defaultConfig {
-        minSdk = 28
+        minSdk = 26
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
