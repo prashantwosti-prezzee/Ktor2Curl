@@ -5,7 +5,7 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinSerialization)
-    id("com.vanniktech.maven.publish") version "0.33.0"
+    //id("com.vanniktech.maven.publish") version "0.33.0"
 }
 
 kotlin {
@@ -68,45 +68,45 @@ dependencies {
     implementation(libs.kotlinx.coroutines.core)
 }
 
-mavenPublishing {
-    coordinates(
-        groupId = "io.github.kabirnayeem99",
-        artifactId = "ktor2curl",
-        version = "2.0.1",
-    )
-
-    pom {
-        name.set("ktor2curl")
-        description.set(
-            "Ktor2Curl is a Ktor client plugin that seamlessly converts HTTP requests into cURL commands for debugging and logging.",
-        )
-        inceptionYear.set("2024")
-        url.set("https://github.com/kabirnayeem99/Ktor2Curl")
-
-        licenses {
-            license {
-                name.set("MIT")
-                url.set("https://opensource.org/licenses/MIT")
-            }
-        }
-
-        developers {
-            developer {
-                id.set("kabirnayeem99")
-                name.set("Naimul Kabir")
-                email.set("kabirnayeem.99@gmail.com")
-            }
-        }
-
-        scm {
-            url.set("https://github.com/kabirnayeem99/Ktor2Curl")
-        }
-    }
-
-    publishToMavenCentral()
+//mavenPublishing {
+//    coordinates(
+//        groupId = "io.github.kabirnayeem99",
+//        artifactId = "ktor2curl",
+//        version = "2.0.1",
+//    )
+//
+//    pom {
+//        name.set("ktor2curl")
+//        description.set(
+//            "Ktor2Curl is a Ktor client plugin that seamlessly converts HTTP requests into cURL commands for debugging and logging.",
+//        )
+//        inceptionYear.set("2024")
+//        url.set("https://github.com/kabirnayeem99/Ktor2Curl")
+//
+//        licenses {
+//            license {
+//                name.set("MIT")
+//                url.set("https://opensource.org/licenses/MIT")
+//            }
+//        }
+//
+//        developers {
+//            developer {
+//                id.set("kabirnayeem99")
+//                name.set("Naimul Kabir")
+//                email.set("kabirnayeem.99@gmail.com")
+//            }
+//        }
+//
+//        scm {
+//            url.set("https://github.com/kabirnayeem99/Ktor2Curl")
+//        }
+//    }
+//
+//    publishToMavenCentral()
     // Configure publishing to Maven Central
 //    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
-
+//
     // Enable GPG signing for all publications
-    signAllPublications()
-}
+//    signAllPublications()
+//}
